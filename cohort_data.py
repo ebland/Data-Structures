@@ -21,6 +21,9 @@ def unique_houses(filename):
         member_data_tokens = line.split("|")
         if member_data_tokens[2]:
             houses.add(member_data_tokens[2])
+
+    cohort_file.close()
+
     return houses
 
 
